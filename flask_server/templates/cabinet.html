@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<link href="static/css/cabinet.css" type="text/css" rel="stylesheet">
+
+<button type="button" class="wide_but" name="button" onclick="logout()">Деаутентификация</button>
+<button type="button" class="wide_but" id="again" style="visibility:hidden;" name="button" onclick="refresh()">Попробовать еще!</button>
+
+<div id="load_info">
+	<h3 style="color:green;" id="server_info">Подождите, информация загружается...</h3>
+</div>
+
+<div>
+	<p id="personal_info"></p>
+</div>
+<div class="friends" id="friends">
+
+</div>
+
+<script src="static/js/cabinet.js"></script>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  <link href="static/css/auth.css" type="text/css" rel="stylesheet">
+
+  <div class="auth_data">
+    <h1>Выбора нет :)</h1>
+    <div id="vk_api_transport"></div>
+    <button type="button" class="wide_but" name="button" onclick="vk_auth()">Авторизоваться</button>
+  </div>
+
+   <script src="static/js/auth.js"></script>
+{% endblock %}

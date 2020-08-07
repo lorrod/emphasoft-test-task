@@ -1,0 +1,27 @@
+
+
+.friends {
+  display: flex;
+  flex: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.friend {
+  flex: auto;
+  overflow: hidden;
+}
+
+.friends p {
+  visibility: hidden;
+  color: red;
+}
+
+.friend:hover{
+  opacity: 0.6;
+  visibility: visible;
+}
+
+.friend:hover p{
+  visibility: visible;
+}
